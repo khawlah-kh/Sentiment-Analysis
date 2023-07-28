@@ -11,6 +11,7 @@
 		DFBD30452A73D5E900770E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD30442A73D5E900770E6E /* ContentView.swift */; };
 		DFBD30472A73D5E900770E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD30462A73D5E900770E6E /* Assets.xcassets */; };
 		DFBD304A2A73D5E900770E6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD30492A73D5E900770E6E /* Preview Assets.xcassets */; };
+		DFBD30512A73D61100770E6E /* SentimentAnalysisModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFBD30502A73D61100770E6E /* SentimentAnalysisModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DFBD30442A73D5E900770E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFBD30462A73D5E900770E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFBD30492A73D5E900770E6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFBD30502A73D61100770E6E /* SentimentAnalysisModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentAnalysisModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DFBD30422A73D5E900770E6E /* SentimentAnalysisApp.swift */,
 				DFBD30442A73D5E900770E6E /* ContentView.swift */,
+				DFBD30502A73D61100770E6E /* SentimentAnalysisModel.mlmodel */,
 				DFBD30462A73D5E900770E6E /* Assets.xcassets */,
 				DFBD30482A73D5E900770E6E /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				DFBD30452A73D5E900770E6E /* ContentView.swift in Sources */,
 				DFBD30432A73D5E900770E6E /* SentimentAnalysisApp.swift in Sources */,
+				DFBD30512A73D61100770E6E /* SentimentAnalysisModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

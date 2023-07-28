@@ -6,16 +6,52 @@
 //
 
 import SwiftUI
+import CoreML
 
 struct ContentView: View {
+    @State var input: String = ""
+    @State var result: String = ""
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 16) {
+            TextField("Type anything . . .", text: $input, axis: .vertical)
+                .font(.headline)
+                .textFieldStyle(.roundedBorder)
+            Button {
+                analysisTheSentiment()
+            } label: {
+                HStack{
+                    Spacer()
+                    Text("Sentiment Analysis")
+                        .foregroundColor(.white)
+                        .bold()
+                    Spacer()
+                }
+                .padding()
+                .background {
+                    Color.purple
+                }.cornerRadius(8)
+            }
+
+            Text("Result: \(result)")
+            +
+            Text("\(result == "Pos" ? "☺️" : result == "Neg" ? "😔" : "")")
+                .bold()
         }
         .padding()
+    }
+    
+    
+
+    func analysisTheSentiment(){
+        let model = SentimentAnalysisModel()
+        do{
+        let prediction = try model.prediction(text: input)
+        result =  prediction.label
+        }
+        catch{
+            
+        }
     }
 }
 
